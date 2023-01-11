@@ -1,10 +1,17 @@
 <!DOCTYPE html> 
+
 <html lang = "pt-br">
     <head>
         <meta charset = "UTF-8"/>
+        
         <title>Tudo sobre google Glass</title>
         <link rel="stylesheet" href="styles.css" />
         <Style>
+           @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,300&display=swap');
+            @font-face{
+                font-family: "FonteLogo";
+                src: url("_fonts/bubblegum-sans-regular.otf");
+            }
 body{
     background-color: #dddddd;
     color: rgba(0,0,0,1);
@@ -24,7 +31,22 @@ header#cabecalho img#icone{
 header#cabecalho{
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background: url("../projeto-glass-html5/_imagens/glass-logo-peq.jpg");
+    background: url("../projeto-glass-html5/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+ }
+ header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 50px;
+ }
+ header#cabecalho h2{
+font-family: 'Sofia Sans', sans-serif;
+color: #888888;
+font-size: 15pt;
+padding:0px;
+margin-top: 0px;
  }
 
 
@@ -49,6 +71,30 @@ nav#menu a:hover{
     color: white;
 }
 
+aside#lateral {
+    display:block;
+    width: 370px;
+    float: right;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #888888;
+    padding-right: 15px;
+}
+
+
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #888888;
+}
+
+footer#rodape p{
+    text-align: center;
+}
 nav#menu ul{
     list-style:none;
     position: absolute;
@@ -87,7 +133,7 @@ nav#menu h1{
         <div id = "interface">
             <header id = "cabecalho">
             
-            
+    
         <hgroup>
         <h3> Tecnologia &nbsp; Inovações</h3>
         <h1> Google Glass </h1>
@@ -100,6 +146,7 @@ nav#menu h1{
         <img id = "icone" src="_imagens/glass-oculos-preto-peq.png"> </img>
         </figure>
     </header>
+<section id = "corpo"> 
 Google Glass
 A revolução do Google está chegando
 
@@ -152,19 +199,25 @@ O que você pode fazer com o Google Glasses
 O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
 
 [AQUI ENTRA UM VÍDEO]
+</section>
 
-Outras Notícias
-Vídeo mais recente
+<aside id="lateral">
+<h1>Outras Notícias </h1>
+<h2>Vídeo mais recente</h2>
 
 [AQUI ENTRA UM VÍDEO]
 
-Novidades no Glass
-O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.
+<h2>Novidades no Glass</h2>
+<p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
 
-Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.
+<p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+</aside>
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id = "rodape"> 
+
+<p>copyright 2013 - by Gustavo Guanabara</p>
+<p><a href ="https://www.facebook.com/">Facebook</a> | <a href="https://twitter.com/home?lang=pt"> Twitter</a></p>
+</footer>
     </div>
 </body>
 </html>
