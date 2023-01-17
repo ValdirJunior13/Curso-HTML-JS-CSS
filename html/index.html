@@ -13,10 +13,20 @@
                 src: url("_fonts/bubblegum-sans-regular.otf");
             }
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
 p{
     text-align:justify;
     text-indent: 50px;
@@ -75,11 +85,29 @@ aside#lateral {
     display:block;
     width: 370px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+}
+
+aside#lateral h2{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 13pt;
+    color: #ffffff;
+    background-color: #606060;
+    padding: 5px;
 }
 
 section#corpo {
     display: block;
-    width: 500px;
+    width: 494.3px;
     float: left;
     border-right: 1px solid #888888;
     padding-right: 15px;
@@ -126,6 +154,55 @@ nav#menu li{
 nav#menu li:hover{
     background-color: #606060;
 }
+table#tabela td.ce{
+color: #ffffff;
+background-color: #606060;
+
+}
+table#tabela td.cd{
+background-color:#ffffff;
+}
+
+table#tabela caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabela caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+header#cabecalhoartigo h1{
+    font-family: 'Sofia Sans', sans-serif;
+font-size: 20pt;
+color: #606060;
+}
+
+
+
+.direita{
+text-align:right;
+}
+
+header#cabecalhoartigo h3{
+    font-family: 'Sofia Sans', sans-serif;
+font-size: 12px;
+color: #606060;
+}
+
+article#artigo h2 {
+font-size: 12pt;
+color:#000000;
+background-color: #888888;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+
+}
 nav#menu h1{
     display:none;
 }
@@ -158,6 +235,8 @@ nav#menu h1{
         </figure>
     </header>
 <section id = "corpo"> 
+
+     
 Google Glass
 A revolução do Google está chegando
 
@@ -172,14 +251,18 @@ A revolução do Google está chegando
 <li><a href = "fale-conosco.html"> Fale conosco</a></li>
 </ul>
 </nav>
+<article id = "artigo"> 
+<header id = "cabecalhoartigo">
 
+<hgroup>
+<h3>Tecnologia > Inovações</h3>
+<h1>Saiba tudo sobre o Google Glass</h1>
+<h3 class = "direita">Atualizado em 23/Abril/2013</h3>
 
-Tecnologia > Inovações
-Saiba tudo sobre o Google Glass
-por Gustavo Guanabara
-Atualizado em 23/Abril/2013
+</hgroup>
+</header>
 
-O que é
+<h2>O que é</h2>
 O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href = "https://lenscope.com.br/blog/google-glass/#:~:text=O%20Google%20Glass%20%C3%A9%20um,%2C%20enviar%20mensagens%2C%20fazer%20videoconfer%C3%AAncias%E2%80%A6" target ="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <b>Google Glass</b> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.
 
 
@@ -192,28 +275,30 @@ O <b>Google Glass</b> é um acessório em forma de óculos que possibilita a int
     
 </figure>
 
-Data de lançamento
+<h2>Data de lançamento</h2>
 Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.
 
-Especificações Técnicas
+<h2>Especificações Técnicas</h2>
 <table id = "tabela">
 
-<caption>Tabela Técnica do Google Glass Mar/2013</caption>
+<caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
 
-<tr><td>Tela:</td> <td>Resolução equivalente a tela de 25"</td></tr>
-<tr><td rowspan = "2">Camera:</td> <td>5MP para fotos </td></tr>
-<tr><td> 720p para vídeos</td></tr>
-<tr><td rowspan = "2">Conectividade:</td> <td>Wi-Fi</td></tr>
-<tr><td>Bluetooth</td></tr>
-<tr><td>Memória Interna:</td> <td>12GB</td></tr>
+<tr><td class = "ce">Tela</td> <td class = "cd">Resolução equivalente a tela de 25"</td></tr>
+<tr><td rowspan = "2" class = "ce">Camera</td> <td class = "cd">5MP para fotos </td></tr>
+<tr><td class = "cd"> 720p para vídeos</td></tr>
+<tr><td rowspan = "2" class = "ce">Conectividade</td> <td class = "cd">Wi-Fi</td></tr>
+<tr><td class = "cd">Bluetooth</td></tr>
+<tr><td class = "ce">Memória Interna</td> <td class = "cd">12GB</td></tr>
 </table>
-Como funciona
+
+<h2>Como funciona</h2>
 De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça
 
-O que você pode fazer com o Google Glasses
+<h2>O que você pode fazer com o Google Glasses</h2>
 O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
 
 [AQUI ENTRA UM VÍDEO]
+</article>
 </section>
 
 <aside id="lateral">
