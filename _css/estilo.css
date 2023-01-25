@@ -1,4 +1,5 @@
-<Style>
+@charset "UTF-8";
+
     @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,300&display=swap');
 
     @font-face {
@@ -26,24 +27,19 @@
       text-align: justify;
       text-indent: 50px;
     }
-/*Consegui melhorar:
-header#cabecalho img#icone {
-   position: relative;
-   left: 730px;
-   top: -250px;
-}*/
+
     header#cabecalho img#icone {
       display: block;
       position: absolute;
-      margin-left: 720px;
-      top: 70px;
+      margin-left: 730px;
+      top:35px;
 
     }
 
     header#cabecalho {
-      border-bottom: 1px #606060 solid;
+      border-bottom: 2px #606060 solid;
       height: 150px;
-      background: url("../projeto-glass-html5/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+      background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
     }
 
     header#cabecalho h1 {
@@ -52,7 +48,7 @@ header#cabecalho img#icone {
       color: #606060;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
       padding: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
     }
 
     header#cabecalho h2 {
@@ -197,6 +193,7 @@ header#cabecalho img#icone {
 
     .direita {
       text-align: right;
+      
     }
 
     header#cabecalhoartigo h3 {
@@ -226,4 +223,5 @@ header#cabecalho img#icone {
       text-align: justify;
       text-indent: 50px;
     }
-</Style>
+
+
