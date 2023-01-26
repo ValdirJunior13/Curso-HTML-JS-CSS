@@ -9,6 +9,14 @@
         <link rel="stylesheet" href="_css/form.css"/>
        </head>
         <script language = "javascript" src = "_javascript/funcoes.js"> </script>
+        <script>
+            function calc_total(){
+                var qtd = parseInt(document.getElementById("cQuant").value);
+                tot = qtd*1500;
+                document.getElementById('cPreco').value = tot;
+                
+            }
+        </script>
    
   
        <body>
@@ -47,7 +55,7 @@
             </hgroup>
           </header>
          </ul> 
-         <form>
+         <form method="post" id="fcontato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
         <fieldset id="identificacao"> <legend>Identificação do Usuário</legend>
             <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/> </p> 
             <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="Senha"/> </p>
@@ -64,21 +72,23 @@
          <fieldset id="endereco"><legend>Endereço do Usuário </legend>
              <p><label for="cLogradouro">Logradouro:</label> <input type="text" name="tLogradouro" id="cLogradouro" size="20" maxlength="30" placeholder="Logradouro"/> </p> 
             <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="999999" placeholder="Número de telefone"/> </p>  
-            <p><label for="cEstado">Estado:</label> <input type="text" name="tEstado" id="cEstado" size="12" maxlength="15" placeholder="Estado"/> </p> 
-            <p><label for="cCidade">Cidade:</label> <input type="text" name="tCidade" id="cCidade" size="20" maxlength="30" placeholder="Cidade"/> </p> 
+            <p><label for="cEstado">Estado:</label><select name="tEst" id="cEst"> <option value="RJ">Rio de Janeiro</option><option value="PE">Pernambuco</option></select></p>
+            <p><label for="cCidade">Cidade:</label> <input type="text" name="tCidade" id="cCidade" size="20" maxlength="30" placeholder="Cidade" list="cidades"/><datalist id="cidades"><option value="Paranatama"></option><option value="Surubim"></option></datalist> </p> 
         </fieldset>
          <fieldset id="mensagem"><legend>Mensagem do Usuário </legend>
-            Grau de Urgência: 
-            Mensagem: 
+           <p><label for ="cUrg" > Grau de Urgência: </label> <input type="range" name="tUrg" id="cUrg" min ="0" max="5" step="1"></p>
+            <p><label for="cMens"> Mensagem: </label> <textarea name="tMens" id="cMens" cols="45" rows="5" palceholder="Deixe aqui sua mensagem"> </textarea></p>
         </fieldset>
         
 
         <fieldset id="pedido"><legend> Quero um Google Glass </legend>
-            Gostaria de adquirir um Google Glass quando disponível 
-            Cor: 
-            Quantidade: 
-            Preço Total: R$ [BOTÃO ENVIAR] 
+            <p><input type="checkbox" name="tPed" id="cPed"/> <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label> </p>
+            <p><label for="cCor"> Cor:</label><input type="color" name="tColor" id="cColor" value="#ffffff"> </p> 
+            <p><label for="cQuant">Quantidade:</label><input type="number" name="tQuant" id="cQuant" min="0" max="5" value="0"></p> 
+            <p><label for="cPreco">Preço Total: </label><input type="text" name="tPreco" id="cPreco" placeholder="Valor total a pagar" readonly> 
+            
         </fieldset>
+        <input type="image" src="_imagens/botao-enviar.png" /> 
         </form>
         </article>
     </section>
