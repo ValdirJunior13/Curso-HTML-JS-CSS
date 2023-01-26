@@ -224,4 +224,15 @@
       text-indent: 50px;
     }
 
+video#video-index{
+    display:block;
+    position:relative;
+    left:30px;
+}
 
+video#video-index02{
+    display:block;
+    position:relative;
+    left:90px;
+    
+}
